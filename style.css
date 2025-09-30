@@ -1,14 +1,17 @@
-/* 🔸 Estilos generales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: 'Segoe UI', Tahoma, sans-serif, Poppins;
 }
 
 body {
   background-color: #fdfdfd;
   color: #333;
+  font-family: 'Poppins', sans-serif;
+  h1, h2, h3 {
+  font-family: 'Tahoma', cursive;
+}
 }
 
 /* 🔸 Barra de navegación */
@@ -17,7 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #ffffff;
+  background-color: #c28a62;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
@@ -27,6 +30,7 @@ header {
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
+   font-family: Poppins;
 }
 
 header nav ul {
@@ -95,7 +99,7 @@ header nav a:hover {
 }
 
 .item {
-  background-color: white;
+  background-color: PapayaWhip;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -128,12 +132,60 @@ iframe {
   border-radius: 10px;
 }
 
+/* 🟡 Sección Misión y Visión */
+.mision-vision {
+  padding: 60px 20px;
+  background-color: #fff8f0; /* color suave estilo comida */
+  text-align: center;
+}
+
+.mision-vision h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #e63946; /* color destacado */
+}
+
+.mv-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mv-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  flex: 1 1 300px;
+  max-width: 450px;
+  transition: transform 0.3s ease;
+}
+
+.mv-box:hover {
+  transform: translateY(-5px);
+}
+
+.mv-box h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.mv-box p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 /* 🔸 Footer */
 footer {
   background-color: #222;
   color: white;
   text-align: center;
+ font-family: 'Tahoma', cursive; 
   padding: 20px;
   font-size: 0.9rem;
   margin-top: 40px;
-}
